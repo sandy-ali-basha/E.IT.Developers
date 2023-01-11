@@ -1,0 +1,471 @@
+@import "../fonts/Poppins/stylesheet.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //   border: 1px solid red;
+  font-family: Poppins;
+  transition: all 0.5s;
+  accent-color: #439299;
+}
+$dark_blue: #313c4e;
+$green_primary: #439299;
+button {
+  &:hover {
+    filter: opacity(0.8);
+  }
+}
+body {
+  background-color: #313c4e;
+  overflow-x: hidden;
+}
+.navbar {
+  background: $dark_blue !important;
+}
+.fs-8 {
+  font-size: 0.8rem;
+}
+.active {
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: " ";
+    left: 0px;
+    bottom: -2px;
+    width: 100%;
+    height: 310%;
+    border-radius: 10px;
+    background: $green_primary;
+    z-index: -1;
+    position: absolute;
+  }
+}
+.navbar-brand {
+  font-size: 2rem;
+  color: white;
+  font-family: "Poppins_bold";
+  &:hover {
+    color: white !important;
+  }
+}
+.navBtn {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+.nav_img {
+  width: 30px;
+}
+.btn_hireUs {
+  background: $green_primary;
+}
+
+// header
+.header {
+  background: $dark_blue;
+  height: 85vh;
+  .text {
+    padding-inline-start: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h1,
+    h5 {
+      color: white;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 70%;
+    }
+  }
+}
+.popUp {
+  background-color: $green_primary;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 0.8rem;
+  position: relative;
+
+  &:hover {
+    transform: rotate(5deg);
+  }
+  &::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $green_primary;
+    position: absolute;
+    left: 40%;
+    bottom: -10px;
+  }
+}
+.Dbtn {
+  background: $green_primary;
+}
+.Obtn {
+  border: 1px solid $green_primary;
+}
+.Dbtn,
+.Obtn {
+  color: white;
+  padding: 12px 25px;
+}
+.scrollDownIcon {
+  width: 3vw;
+}
+///WhoWeAre
+.title {
+  border-bottom: 2px solid $green_primary;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.WhoWeAre {
+  padding: 5vh 5vw;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 5vh;
+
+  .personCard {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .name,
+    .major {
+      color: white;
+      text-align: center;
+      margin-top: 0.3rem;
+    }
+    .name {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .fullBtn {
+      background: #43929971;
+      border-radius: 5px;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      padding: 8px 15px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        padding: 8px 30px;
+        background: #64d8e283;
+      }
+    }
+  }
+}
+// what we do section
+.WhatWeDo {
+  background: $dark_blue;
+  position: relative;
+  padding-top: 5vh;
+  z-index: 1;
+  height: 100vh;
+  .title {
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -10vh;
+      background: url(/imgs/svg/---.svg) center/contain no-repeat;
+      left: 50%;
+      height: 10vh;
+      width: 5px;
+    }
+  }
+  .click {
+    font-size: 0.8rem;
+    margin-inline-start: 30vw;
+    background: hsla(185, 39%, 43%, 0.521);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: fit-content;
+  }
+  .Scard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+    border-radius: 5px;
+    background-color: #111111;
+    color: white;
+
+    &:hover {
+      background: $green_primary;
+      .icon {
+        background: white;
+        svg {
+          path {
+            fill: $green_primary;
+          }
+        }
+      }
+    }
+    .icon {
+      border-radius: 50px;
+      padding: 1rem;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+.waveBg {
+  position: absolute;
+  z-index: 1;
+  width: 33%;
+  top: 31vh;
+  left: 21%;
+  img {
+    width: 100%;
+  }
+}
+//OurPortfolio
+.OurPortfolio {
+  background: $dark_blue;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  .OurPortfolioHeader {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+  }
+  .PSections {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .PSection {
+      margin-inline-start: 0.5rem;
+      margin-inline-end: 0.5rem;
+      color: white;
+      text-decoration: none;
+      padding-bottom: 5px;
+      &:active,
+      &:hover {
+        color: $green_primary;
+        border-bottom: 1px solid $green_primary;
+      }
+    }
+  }
+  .cards {
+    margin-top: 10vh;
+  }
+  .cardName {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 5vh;
+  }
+  .ViewMore {
+    padding: 10px 3rem;
+    background: #43929979;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .imageContainer {
+    transition: all 0.5s;
+    &:hover {
+      transition: all 0.5s;
+      .overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  .overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background: #11111183;
+    padding: 2rem;
+    text-align: start;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .CardTitle {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: white;
+    }
+    .disc {
+      margin-top: 0.5rem;
+      color: white;
+    }
+    .name {
+      padding: 10px 20px;
+      background-color: #439299a2;
+      color: white;
+      border-radius: 5px;
+      margin-inline-end: 0.5rem;
+      margin-inline-start: 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+// footer
+footer {
+  background: url("../imgs/footerBg.png") center/cover no-repeat;
+  .Fheader {
+    color: white;
+    padding: 3vw 2vh;
+    font-size: 2.4rem;
+    font-weight: light;
+    text-align: center;
+  }
+  .contact {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background: #43929971;
+    color: white;
+    padding-inline-start: 10vw;
+    padding-inline-end: 10vw;
+    padding-top: 5vh;
+
+    p {
+      font-size: 1rem;
+    }
+    .text {
+      text-decoration: none;
+      color: white;
+      text-align: end;
+      &:hover {
+        color: white;
+      }
+    }
+    .icon {
+      width: 35px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .Ctitle {
+      font-family: Poppins_SemiBold;
+      font-size: 2rem;
+    }
+  }
+  textarea,
+  input {
+    color: white;
+    padding: 1rem 2rem;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 1rem 0.5rem;
+    width: 100%;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  .foranything {
+    h3 {
+      font-size: 1.7rem;
+      width: max-content;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  }
+  .SubmitContainer {
+    padding-top: 5vh;
+    max-width: 100% !important;
+    padding-bottom: 10vh;
+    .techlive {
+      color: white;
+      border-radius: 0px 5px 5px 0px;
+      font-size: 1.8rem;
+      font-family: Poppins_SemiBold;
+      padding: 5px 20px;
+      background: #439299;
+      width: fit-content;
+      padding-inline-start: 5vw;
+    }
+    .submit {
+      margin-inline-start: 3vw;
+      color: white;
+      background: $green_primary;
+      border-radius: 5px 5px;
+      font-size: 0.9rem;
+      height: 100%;
+      padding: 10px 3rem;
+      border: none;
+      outline: none;
+      font-weight: bold;
+    }
+  }
+}
+// circles
+.circleofWho {
+  width: 24vw;
+  height: 24vw;
+  background-color: hsla(185, 39%, 43%, 0.52);
+  position: absolute;
+  border-radius: 50%;
+  right: -15vw;
+  top: -12vw;
+  overflow: hidden;
+}
+.circleofWho2 {
+  width: 24vw;
+  height: 24vw;
+  background-color: hsla(185, 39%, 43%, 0.52);
+  position: absolute;
+  border-radius: 50%;
+  left: -8vw;
+  top: 3vw;
+  z-index: -1;
+  overflow: hidden;
+}
+.circleofWho3 {
+  width: 24vw;
+  height: 24vw;
+  background-color: hsla(185, 39%, 43%, 0.52);
+  position: absolute;
+  border-radius: 50%;
+  right: -15vw;
+  bottom: -12vw;
+  z-index: -1;
+  overflow: hidden;
+}

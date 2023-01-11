@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="805.246" height="866.898" viewBox="0 0 805.246 866.898">
+  <g id="Group_34885" data-name="Group 34885" transform="translate(-407.754 -2519.494)">
+    <g id="Group_34884" data-name="Group 34884">
+      <g id="Group_221" data-name="Group 221" transform="translate(0 -702.608)">
+        <text id="Our_Portfolio" data-name="Our Portfolio" transform="translate(960 4061)" fill="#fff" font-size="80" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-252.12" y="0">Our Portfolio</tspan></text>
+        <line id="Line_37" data-name="Line 37" y2="95" transform="translate(960.5 3913.5)" fill="none" stroke="#32c9d6" stroke-width="1" stroke-dasharray="10"/>
+      </g>
+      <path id="Path_36845" data-name="Path 36845" d="M1827.5,2458s1.387,106.41-379.476,34.981-76.812,86.04-76.812,86.04" transform="translate(-848 61.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="28"/>
+      <path id="Path_36847" data-name="Path 36847" d="M1246.832,2298.183s34.5,80.616,38.454,182.412c3.3,84.951-33.278,186.852,48.708,248.916,50.7,38.382,125.038-79.316,153.814-72.2,72.6,17.941,47.426,96.907,47.426,96.907" transform="matrix(1, -0.017, 0.017, 1, -614.331, 481.378)" fill="none" stroke="#32c9d6" stroke-width="1" stroke-dasharray="14"/>
+    </g>
+    <g id="Group_34860" data-name="Group 34860" transform="translate(-170 469)">
+      <g id="Group_34857" data-name="Group 34857" transform="translate(-179.283 447.432)">
+        <rect id="Rectangle_129" data-name="Rectangle 129" width="98" height="71" rx="10" transform="translate(1038.283 2077.568)" fill="rgba(67,146,153,0.52)"/>
+      </g>
+      <text id="OR_SEE" data-name="OR SEE" transform="translate(878 2569)" fill="#fff" font-size="20" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="0">OR SEE</tspan></text>
+    </g>
+  </g>
+</svg>

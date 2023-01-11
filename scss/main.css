@@ -1,0 +1,489 @@
+@import "../fonts/Poppins/stylesheet.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  transition: all 0.5s;
+  accent-color: #439299;
+}
+
+button:hover {
+  filter: opacity(0.8);
+}
+
+body {
+  background-color: #313c4e;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #313c4e !important;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.active {
+  position: relative;
+  z-index: 2;
+}
+.active::after {
+  content: " ";
+  left: 0px;
+  bottom: -2px;
+  width: 100%;
+  height: 310%;
+  border-radius: 10px;
+  background: #439299;
+  z-index: -1;
+  position: absolute;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: white;
+  font-family: "Poppins_bold";
+}
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.navBtn {
+  color: white;
+}
+.navBtn:hover {
+  color: white;
+}
+
+.nav_img {
+  width: 30px;
+}
+
+.btn_hireUs {
+  background: #439299;
+}
+
+.header {
+  background: #313c4e;
+  height: 85vh;
+}
+.header .text {
+  -webkit-padding-start: 10vw;
+          padding-inline-start: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.header .text h1,
+.header .text h5 {
+  color: white;
+}
+.header .text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .img img {
+  width: 70%;
+}
+
+.popUp {
+  background-color: #439299;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 0.8rem;
+  position: relative;
+}
+.popUp:hover {
+  transform: rotate(5deg);
+}
+.popUp::before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #439299;
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+}
+
+.Dbtn {
+  background: #439299;
+}
+
+.Obtn {
+  border: 1px solid #439299;
+}
+
+.Dbtn,
+.Obtn {
+  color: white;
+  padding: 12px 25px;
+}
+
+.scrollDownIcon {
+  width: 3vw;
+}
+
+.title {
+  border-bottom: 2px solid #439299;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.WhoWeAre {
+  padding: 5vh 5vw;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 5vh;
+}
+.WhoWeAre .personCard {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.WhoWeAre .personCard img {
+  width: 90%;
+  margin: 0 auto;
+}
+.WhoWeAre .personCard .name,
+.WhoWeAre .personCard .major {
+  color: white;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.WhoWeAre .personCard .name {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.WhoWeAre .personCard .fullBtn {
+  background: rgba(67, 146, 153, 0.4431372549);
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.WhoWeAre .personCard .fullBtn:hover {
+  padding: 8px 30px;
+  background: rgba(100, 216, 226, 0.5137254902);
+}
+
+.WhatWeDo {
+  background: #313c4e;
+  position: relative;
+  padding-top: 5vh;
+  z-index: 1;
+  height: 100vh;
+}
+.WhatWeDo .title {
+  position: relative;
+}
+.WhatWeDo .title::before {
+  content: " ";
+  position: absolute;
+  top: -10vh;
+  background: url(/imgs/svg/---.svg) center/contain no-repeat;
+  left: 50%;
+  height: 10vh;
+  width: 5px;
+}
+.WhatWeDo .click {
+  font-size: 0.8rem;
+  -webkit-margin-start: 30vw;
+          margin-inline-start: 30vw;
+  background: hsla(185deg, 39%, 43%, 0.521);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.WhatWeDo .Scard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 3vw;
+  border-radius: 5px;
+  background-color: #111111;
+  color: white;
+}
+.WhatWeDo .Scard:hover {
+  background: #439299;
+}
+.WhatWeDo .Scard:hover .icon {
+  background: white;
+}
+.WhatWeDo .Scard:hover .icon svg path {
+  fill: #439299;
+}
+.WhatWeDo .Scard .icon {
+  border-radius: 50px;
+  padding: 1rem;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.waveBg {
+  position: absolute;
+  z-index: 1;
+  width: 33%;
+  top: 31vh;
+  left: 21%;
+}
+.waveBg img {
+  width: 100%;
+}
+
+.OurPortfolio {
+  background: #313c4e;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.OurPortfolio .OurPortfolioHeader {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+}
+.OurPortfolio .PSections {
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.OurPortfolio .PSections .PSection {
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.OurPortfolio .PSections .PSection:active, .OurPortfolio .PSections .PSection:hover {
+  color: #439299;
+  border-bottom: 1px solid #439299;
+}
+.OurPortfolio .cards {
+  margin-top: 10vh;
+}
+.OurPortfolio .cardName {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 5vh;
+}
+.OurPortfolio .ViewMore {
+  padding: 10px 3rem;
+  background: rgba(67, 146, 153, 0.4745098039);
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.OurPortfolio .imageContainer {
+  transition: all 0.5s;
+}
+.OurPortfolio .imageContainer:hover {
+  transition: all 0.5s;
+}
+.OurPortfolio .imageContainer:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.OurPortfolio .overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: rgba(17, 17, 17, 0.5137254902);
+  padding: 2rem;
+  text-align: start;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.OurPortfolio .overlay .CardTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+.OurPortfolio .overlay .disc {
+  margin-top: 0.5rem;
+  color: white;
+}
+.OurPortfolio .overlay .name {
+  padding: 10px 20px;
+  background-color: rgba(67, 146, 153, 0.6352941176);
+  color: white;
+  border-radius: 5px;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  font-size: 0.7rem;
+}
+
+footer {
+  background: url("../imgs/footerBg.png") center/cover no-repeat;
+}
+footer .Fheader {
+  color: white;
+  padding: 3vw 2vh;
+  font-size: 2.4rem;
+  font-weight: light;
+  text-align: center;
+}
+footer .contact {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background: rgba(67, 146, 153, 0.4431372549);
+  color: white;
+  -webkit-padding-start: 10vw;
+          padding-inline-start: 10vw;
+  -webkit-padding-end: 10vw;
+          padding-inline-end: 10vw;
+  padding-top: 5vh;
+}
+footer .contact p {
+  font-size: 1rem;
+}
+footer .contact .text {
+  text-decoration: none;
+  color: white;
+  text-align: end;
+}
+footer .contact .text:hover {
+  color: white;
+}
+footer .contact .icon {
+  width: 35px;
+}
+footer .contact .icon img {
+  width: 100%;
+}
+footer .contact .Ctitle {
+  font-family: Poppins_SemiBold;
+  font-size: 2rem;
+}
+footer textarea,
+footer input {
+  color: white;
+  padding: 1rem 2rem;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 1rem 0.5rem;
+  width: 100%;
+}
+footer textarea:active, footer textarea:focus, footer textarea:hover,
+footer input:active,
+footer input:focus,
+footer input:hover {
+  background-color: black;
+  color: white;
+}
+footer .foranything h3 {
+  font-size: 1.7rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+footer .SubmitContainer {
+  padding-top: 5vh;
+  max-width: 100% !important;
+  padding-bottom: 10vh;
+}
+footer .SubmitContainer .techlive {
+  color: white;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 1.8rem;
+  font-family: Poppins_SemiBold;
+  padding: 5px 20px;
+  background: #439299;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-padding-start: 5vw;
+          padding-inline-start: 5vw;
+}
+footer .SubmitContainer .submit {
+  -webkit-margin-start: 3vw;
+          margin-inline-start: 3vw;
+  color: white;
+  background: #439299;
+  border-radius: 5px 5px;
+  font-size: 0.9rem;
+  height: 100%;
+  padding: 10px 3rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.circleofWho {
+  width: 24vw;
+  height: 24vw;
+  background-color: hsla(185deg, 39%, 43%, 0.52);
+  position: absolute;
+  border-radius: 50%;
+  right: -15vw;
+  top: -12vw;
+  overflow: hidden;
+}
+
+.circleofWho2 {
+  width: 24vw;
+  height: 24vw;
+  background-color: hsla(185deg, 39%, 43%, 0.52);
+  position: absolute;
+  border-radius: 50%;
+  left: -8vw;
+  top: 3vw;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.circleofWho3 {
+  width: 24vw;
+  height: 24vw;
+  background-color: hsla(185deg, 39%, 43%, 0.52);
+  position: absolute;
+  border-radius: 50%;
+  right: -15vw;
+  bottom: -12vw;
+  z-index: -1;
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */
