@@ -1,4 +1,4 @@
-@import "../fonts/Poppins/stylesheet.css";
+@import "./colors", "../fonts/Poppins/stylesheet.css", "./about";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +8,7 @@
   transition: all 0.5s;
   accent-color: #439299;
 }
-$dark_blue: #313c4e;
-$green_primary: #439299;
+
 button {
   &:hover {
     filter: opacity(0.8);
@@ -17,7 +16,7 @@ button {
 }
 body {
   background-color: #313c4e;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 .navbar {
   background: $dark_blue !important;
