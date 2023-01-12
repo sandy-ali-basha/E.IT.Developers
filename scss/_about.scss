@@ -64,7 +64,7 @@
   flex-direction: column;
 }
 .swiper {
-  height: 50vh;
+  height: fit-content;
   width: 100vw;
 }
 .swiper-slide {
@@ -81,7 +81,9 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
-
+.h2 {
+  font-weight: bold;
+}
 .EXcard {
   margin: 1rem;
   background: black;
@@ -91,8 +93,9 @@
   padding: 1.5rem;
 }
 .tasks {
+  font-weight: bold;
   color: $green_primary;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
