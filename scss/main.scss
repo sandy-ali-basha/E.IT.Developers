@@ -1,5 +1,5 @@
-@import "./colors", "../fonts/Poppins/stylesheet.css", "./about",
-  "./breakpoints";
+@import "./breakpoints", "./colors", "../fonts/Poppins/stylesheet.css",
+  "./about";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +22,9 @@ body {
 .navbar {
   background: $dark_blue !important;
 }
+.navbar-toggler {
+  padding: 0.3px 0.25rem 0.3rem 0rem;
+}
 .fs-8 {
   font-size: 0.8rem;
   @include media("<=tablet") {
@@ -42,6 +45,9 @@ body {
     z-index: -1;
     position: absolute;
   }
+  @include media("<tablet") {
+    display: none;
+  }
 }
 .navbar-brand {
   font-size: 2rem;
@@ -49,6 +55,9 @@ body {
   font-weight: bold;
   &:hover {
     color: white !important;
+  }
+  @include media("<tablet") {
+    font-size: 1rem;
   }
 }
 .navBtn {
@@ -155,6 +164,7 @@ body {
   margin: 0 auto;
   @include media("<=phone") {
     font-size: 1.5rem;
+    width: auto;
   }
 }
 .WhoWeAre {
@@ -295,11 +305,12 @@ body {
   }
   .PSections {
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    overflow-x: scroll;
+
+    flex-wrap: wrap;
     .PSection {
       margin-inline-start: 0.5rem;
       margin-inline-end: 0.5rem;
@@ -509,6 +520,9 @@ footer {
     right: -7vw;
     top: -7vw;
   }
+  @include media("<=phone") {
+    display: none;
+  }
 }
 .circleofWho2 {
   width: 24vw;
@@ -522,6 +536,9 @@ footer {
   overflow: hidden;
   @include media(">phone", "<=tablet") {
     top: 30vh;
+  }
+  @include media("<=phone") {
+    display: none;
   }
 }
 .circleofWho3 {
@@ -539,5 +556,8 @@ footer {
     height: 35vw;
     right: -5vw;
     bottom: -12vw;
+  }
+  @include media("<=phone") {
+    display: none;
   }
 }

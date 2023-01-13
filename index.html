@@ -13,26 +13,29 @@
     />
     <!-- scss -->
     <link rel="stylesheet" href="./scss/main.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>E.IT.Developers</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid px-5">
-        <a class="navbar-brand" href="#"
-          ><img class="nav_img" src="./imgs/svg/nav-icon.svg" alt="" /> IT
+      <div class="container-fluid px-md-5 px-3">
+        <a class="navbar-brand" href="#">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img class="nav_img" src="./imgs/svg/nav-icon.svg" alt="" />
+          </button>
+          IT
           <br />DEVELOPERS</a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -42,7 +45,7 @@
               <a class="nav-link navBtn mx-2" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navBtn mx-2" href="#">Portfolio</a>
+              <a class="nav-link navBtn mx-2" href="./page.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navBtn mx-2" href="#">Contact Us</a>
@@ -52,28 +55,6 @@
                 >Hire Us!</a
               >
             </li>
-            <!-- <li class="nav-item  dropdown">
-              <a 
-                class="nav-link mx-2 dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -101,27 +82,27 @@
       <!-- who we are  -->
       <div class="WhoWeAre row">
         <div class="col-md-12">
-          <div class="title">Who We Are</div>
+          <div class="title" data-aos="fade-up">Who We Are</div>
         </div>
-        <div class="col-lg-3 col-md-4 personCard">
+        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
+          <img src="./imgs/asmaa.png" alt="" />
+          <div class="name">Asmaa Nasr</div>
+          <div class="major">Our UI/UX Designer & Systems Analyst</div>
+          <a href="/page.html" class="fullBtn">Full View</a>
+        </div>
+        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
           <img src="./imgs/asmaa.png" alt="" />
           <div class="name">Asmaa Nasr</div>
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
           <a href="#" class="fullBtn">Full View</a>
         </div>
-        <div class="col-lg-3 col-md-4 personCard">
+        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
           <img src="./imgs/asmaa.png" alt="" />
           <div class="name">Asmaa Nasr</div>
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
           <a href="#" class="fullBtn">Full View</a>
         </div>
-        <div class="col-lg-3 col-md-4 personCard">
-          <img src="./imgs/asmaa.png" alt="" />
-          <div class="name">Asmaa Nasr</div>
-          <div class="major">Our UI/UX Designer & Systems Analyst</div>
-          <a href="#" class="fullBtn">Full View</a>
-        </div>
-        <div class="col-lg-3 col-md-4 personCard">
+        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
           <img src="./imgs/asmaa.png" alt="" />
           <div class="name">Asmaa Nasr</div>
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
@@ -129,10 +110,10 @@
         </div>
       </div>
       <div class="row py-5 WhatWeDo">
-        <div class="circleofWho"></div>
-        <div class="circleofWho2"></div>
+        <div class="circleofWho" data-aos="fade-left"></div>
+        <div class="circleofWho2" data-aos="fade-right"></div>
         <div class="col-md-12">
-          <div class="title">What Can I Do ?</div>
+          <div class="title" data-aos="fade-up">What Can I Do ?</div>
           <p class="py-3 text-white fs-4 text-center">
             We can provide a lot of service for any person, organization, or
             company
@@ -398,12 +379,12 @@
             </div>
           </div>
         </div>
-        <div class="circleofWho3"></div>
+        <div class="circleofWho3" data-aos="fade-left"></div>
       </div>
       <!-- Our Portfolio -->
       <div class="OurPortfolio row">
         <div class="OurPortfolioHeader">
-          <div class="title">Our Portfolio</div>
+          <div class="title" data-aos="fade-up">Our Portfolio</div>
           <div class="d-inline-flex PSections">
             <a href="#" class="PSection"> All </a>
             <a href="#" class="PSection"> Mobile Development </a>
@@ -417,7 +398,12 @@
             <div
               class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
             >
-              <div class="position-relative imageContainer">
+              <div
+                class="position-relative imageContainer"
+                data-aos="flip-right"
+                data-aos-delay="300"
+                data-aos-duration="700"
+              >
                 <img class="w-100" src="./imgs/Component.png" alt="" />
                 <div class="overlay">
                   <div class="CardTitle">ANK Ecommerce Apps</div>
@@ -437,7 +423,12 @@
             <div
               class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
             >
-              <div class="position-relative imageContainer">
+              <div
+                class="position-relative imageContainer"
+                data-aos="flip-right"
+                data-aos-delay="200"
+                data-aos-duration="700"
+              >
                 <img class="w-100" src="./imgs/Component.png" alt="" />
                 <div class="overlay">
                   <div class="CardTitle">ANK Ecommerce Apps</div>
@@ -457,7 +448,12 @@
             <div
               class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
             >
-              <div class="position-relative imageContainer">
+              <div
+                class="position-relative imageContainer"
+                data-aos="flip-right"
+                data-aos-delay="100"
+                data-aos-duration="700"
+              >
                 <img class="w-100" src="./imgs/Component.png" alt="" />
                 <div class="overlay">
                   <div class="CardTitle">ANK Ecommerce Apps</div>
@@ -554,7 +550,9 @@
         </div>
         <div class="row SubmitContainer">
           <div class="col-md-5">
-            <div class="techlive">For A life With technology</div>
+            <div class="techlive" data-aos="fade-right">
+              For A life With technology
+            </div>
           </div>
           <div class="col-md-6">
             <button class="submit" type="submit">Submit</button>
@@ -575,6 +573,11 @@
           1000
         );
       });
+    </script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

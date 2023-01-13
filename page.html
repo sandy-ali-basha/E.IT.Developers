@@ -18,37 +18,38 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>E.IT.Developers</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid px-5">
-        <a class="navbar-brand" href="#"
-          ><img class="nav_img" src="./imgs/svg/nav-icon.svg" alt="" /> IT
+      <div class="container-fluid px-md-5 px-3">
+        <a class="navbar-brand" href="#">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img class="nav_img" src="./imgs/svg/nav-icon.svg" alt="" />
+          </button>
+          IT
           <br />DEVELOPERS</a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link navBtn active mx-2" href="#">Our Team</a>
+              <a class="nav-link navBtn mx-2" href="#">Our Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navBtn mx-2" href="#">Services</a>
+              <a class="nav-link navBtn mx-2" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navBtn mx-2" href="#">Portfolio</a>
+              <a class="nav-link navBtn active mx-2" href="#">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navBtn mx-2" href="#">Contact Us</a>
@@ -58,37 +59,15 @@
                 >Hire Us!</a
               >
             </li>
-            <!-- <li class="nav-item  dropdown">
-              <a 
-                class="nav-link mx-2 dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li> -->
           </ul>
         </div>
       </div>
     </nav>
     <main class="">
-      <div class="container-fluid px-5">
-        <div class="row">
+      <div class="container-fluid px-md-5 px-3">
+        <div class="row pageContainer">
           <div class="col-md-6">
-            <div class="textContain">
+            <div class="textContain" data-aos="fade-up-right">
               <h1 class="name">Mahmoud Saleh</h1>
               <div class="discription">
                 Software Engineer and mobile application developer
@@ -102,9 +81,9 @@
                 development process. Ambitious, I strive for success, work for
                 me is a hobby, not a need.
               </p>
-              <div class="d-inline-flex w-100">
+              <div class="dsflex w-100">
                 <a href="#" class="DownloadCv me-2">Download CV</a>
-                <div class="d-inline-flex mx-2">
+                <div class="mx-2 SiconContainer">
                   <a href="#" class="mx-1 Sicon"
                     ><img src="./imgs/svg/linkedin.svg" alt=""
                   /></a>
@@ -127,30 +106,57 @@
           <div
             class="col-md-6 d-flex justify-content-center align-items-center"
           >
-            <img src="./imgs/aboutM.png" class="w-100" alt="" />
+            <img
+              src="./imgs/aboutM.png"
+              data-aos="fade-left"
+              class="w-100"
+              alt=""
+            />
           </div>
         </div>
-        <div class="title mt-5">Skills</div>
-        <div class="container-fluid py-5 position-relative z-1 my-5 m-3">
-          <div class="SkillsCircle"></div>
+        <div class="title mt-5" data-aos="fade-up">Skills</div>
+        <div class="container-fluid py-5 position-relative z-1 my-md-5 m-md-3">
+          <div class="SkillsCircle" data-aos="fade-up-left"><p></p></div>
           <div class="row justify-content-center align-items-center">
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
-            <div class="col-2"><div class="skill">Analysing</div></div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="skill">Analysing</div>
+            </div>
           </div>
         </div>
       </div>
       <!-- EXPERIENCE -->
       <div class="experince">
-        <div class="title mt-5 mx-2">WORK EXPERIENCE</div>
+        <div class="title mt-5 mx-2" data-aos="fade-up">WORK EXPERIENCE</div>
         <!-- Slider main container -->
         <div class="swiperContainer">
           <div class="swiper">
@@ -209,73 +215,87 @@
         </div>
       </div>
       <!-- PERSONAL PROJECTS -->
-      <div class="OurPortfolio row">
-        <div class="title">PERSONAL PROJECTS</div>
-        <div class="cards container-fluid px-5">
-          <div class="row">
-            <div
-              class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
-            >
-              <div class="position-relative imageContainer">
-                <img class="w-100" src="./imgs/Component.png" alt="" />
-                <div class="overlay">
-                  <div class="CardTitle">ANK Ecommerce Apps</div>
-                  <p class="disc">
-                    a group of three apps, one for test and tow for test and and
-                    and ds dsf sdf sd fs ds dfsdf
-                  </p>
-                  <div class="d-inline-flex">
-                    <div class="name">Adobe xd</div>
-                    <div class="name">laravel</div>
-                    <div class="name">flutter</div>
+      <div class="container-fluid">
+        <div class="OurPortfolio row">
+          <div class="title">PERSONAL PROJECTS</div>
+          <div class="cards container-fluid px-5">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center px-3"
+              >
+                <div
+                  class="position-relative imageContainer"
+                  data-aos="flip-down"
+                  data-aos-delay="300"
+                >
+                  <img class="w-100" src="./imgs/Component.png" alt="" />
+                  <div class="overlay">
+                    <div class="CardTitle">ANK Ecommerce Apps</div>
+                    <p class="disc">
+                      a group of three apps, one for test and tow for test and
+                      and and ds dsf sdf sd fs ds dfsdf
+                    </p>
+                    <div class="d-flex overlayTags">
+                      <div class="name">Adobe xd</div>
+                      <div class="name">laravel</div>
+                      <div class="name">flutter</div>
+                    </div>
                   </div>
                 </div>
+                <div class="cardName">ANK Ecommerce Apps</div>
               </div>
-              <div class="cardName">ANK Ecommerce Apps</div>
-            </div>
-            <div
-              class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
-            >
-              <div class="position-relative imageContainer">
-                <img class="w-100" src="./imgs/Component.png" alt="" />
-                <div class="overlay">
-                  <div class="CardTitle">ANK Ecommerce Apps</div>
-                  <p class="disc">
-                    a group of three apps, one for test and tow for test and and
-                    and ds dsf sdf sd fs ds dfsdf
-                  </p>
-                  <div class="d-inline-flex">
-                    <div class="name">Adobe xd</div>
-                    <div class="name">laravel</div>
-                    <div class="name">flutter</div>
+              <div
+                class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center px-3"
+              >
+                <div
+                  class="position-relative imageContainer"
+                  data-aos="flip-down"
+                  data-aos-delay="200"
+                >
+                  <img class="w-100" src="./imgs/Component.png" alt="" />
+                  <div class="overlay">
+                    <div class="CardTitle">ANK Ecommerce Apps</div>
+                    <p class="disc">
+                      a group of three apps, one for test and tow for test and
+                      and and ds dsf sdf sd fs ds dfsdf
+                    </p>
+                    <div class="d-flex overlayTags">
+                      <div class="name">Adobe xd</div>
+                      <div class="name">laravel</div>
+                      <div class="name">flutter</div>
+                    </div>
                   </div>
                 </div>
+                <div class="cardName">ANK Ecommerce Apps</div>
               </div>
-              <div class="cardName">ANK Ecommerce Apps</div>
-            </div>
-            <div
-              class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
-            >
-              <div class="position-relative imageContainer">
-                <img class="w-100" src="./imgs/Component.png" alt="" />
-                <div class="overlay">
-                  <div class="CardTitle">ANK Ecommerce Apps</div>
-                  <p class="disc">
-                    a group of three apps, one for test and tow for test and and
-                    and ds dsf sdf sd fs ds dfsdf
-                  </p>
-                  <div class="d-inline-flex">
-                    <div class="name">Adobe xd</div>
-                    <div class="name">laravel</div>
-                    <div class="name">flutter</div>
+              <div
+                class="col-lg-4 col-md-6 d-flex flex-column justify-content-center align-items-center px-3"
+              >
+                <div
+                  class="position-relative imageContainer"
+                  data-aos="flip-down"
+                  data-aos-delay="100"
+                >
+                  <img class="w-100" src="./imgs/Component.png" alt="" />
+                  <div class="overlay">
+                    <div class="CardTitle">ANK Ecommerce Apps</div>
+                    <p class="disc">
+                      a group of three apps, one for test and tow for test and
+                      and and ds dsf sdf sd fs ds dfsdf
+                    </p>
+                    <div class="d-flex overlayTags">
+                      <div class="name">Adobe xd</div>
+                      <div class="name">laravel</div>
+                      <div class="name">flutter</div>
+                    </div>
                   </div>
                 </div>
+                <div class="cardName">ANK Ecommerce Apps</div>
               </div>
-              <div class="cardName">ANK Ecommerce Apps</div>
             </div>
-          </div>
-          <div class="text-center">
-            <button class="btn ViewMore">View More</button>
+            <div class="text-center">
+              <button class="btn ViewMore">View More</button>
+            </div>
           </div>
         </div>
       </div>
@@ -299,6 +319,11 @@
           el: ".swiper-pagination",
         },
       });
+    </script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
