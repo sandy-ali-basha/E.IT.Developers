@@ -122,6 +122,11 @@
   margin-bottom: 2vh;
 }
 
+/**
+*
+* Testing
+*
+**/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -147,6 +152,11 @@ body {
 .fs-8 {
   font-size: 0.8rem;
 }
+@media (max-width: 820px) {
+  .fs-8 {
+    font-size: 1rem;
+  }
+}
 
 .active {
   position: relative;
@@ -167,7 +177,7 @@ body {
 .navbar-brand {
   font-size: 2rem;
   color: white;
-  font-family: "Poppins_bold";
+  font-weight: bold;
 }
 .navbar-brand:hover {
   color: white !important;
@@ -192,6 +202,19 @@ body {
   background: #313c4e;
   height: 85vh;
 }
+@media (max-width: 820px) {
+  .header {
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
 .header .text {
   -webkit-padding-start: 10vw;
           padding-inline-start: 10vw;
@@ -207,6 +230,11 @@ body {
 .header .text h1 {
   font-size: 3rem;
   font-weight: bold;
+}
+@media (max-width: 820px) {
+  .header .text h1 {
+    font-size: 2.5rem;
+  }
 }
 .header .img {
   display: flex;
@@ -257,6 +285,11 @@ body {
 .scrollDownIcon {
   width: 3vw;
 }
+@media (max-width: 820px) {
+  .scrollDownIcon {
+    width: 6vw;
+  }
+}
 
 .title {
   border-bottom: 2px solid #439299;
@@ -266,6 +299,11 @@ body {
   text-align: center;
   width: 50%;
   margin: 0 auto;
+}
+@media (max-width: 450px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }
 
 .WhoWeAre {
@@ -279,10 +317,23 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 2;
+}
+@media (max-width: 820px) {
+  .WhoWeAre .personCard {
+    margin-top: 3vh;
+  }
 }
 .WhoWeAre .personCard img {
   width: 90%;
   margin: 0 auto;
+}
+@media (max-width: 450px) {
+  .WhoWeAre .personCard img {
+    width: 60vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
 }
 .WhoWeAre .personCard .name,
 .WhoWeAre .personCard .major {
@@ -316,6 +367,11 @@ body {
   padding-top: 5vh;
   z-index: 1;
   height: 100vh;
+}
+@media (max-width: 820px) {
+  .WhatWeDo {
+    height: auto;
+  }
 }
 .WhatWeDo .title {
   position: relative;
@@ -393,10 +449,11 @@ body {
 }
 .OurPortfolio .PSections {
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  overflow-x: scroll;
 }
 .OurPortfolio .PSections .PSection {
   -webkit-margin-start: 0.5rem;
@@ -406,6 +463,14 @@ body {
   color: white;
   text-decoration: none;
   padding-bottom: 5px;
+}
+@media (max-width: 450px) {
+  .OurPortfolio .PSections .PSection {
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 .OurPortfolio .PSections .PSection:active, .OurPortfolio .PSections .PSection:hover {
   color: #439299;
@@ -503,13 +568,28 @@ footer .contact p {
 footer .contact .text {
   text-decoration: none;
   color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-wrap: wrap;
   text-align: end;
+}
+@media (max-width: 820px) {
+  footer .contact .text {
+    word-break: break-all;
+    text-align: start;
+  }
 }
 footer .contact .text:hover {
   color: white;
 }
 footer .contact .icon {
   width: 35px;
+}
+@media (min-width: 451px) and (max-width: 820px) {
+  footer .contact .icon {
+    width: 7vw;
+  }
 }
 footer .contact .icon img {
   width: 100%;
@@ -544,6 +624,11 @@ footer .foranything h3 {
   margin-top: 0.5rem;
   font-weight: bold;
 }
+@media (max-width: 820px) {
+  footer .foranything h3 {
+    width: 100%;
+  }
+}
 footer .SubmitContainer {
   padding-top: 5vh;
   max-width: 100% !important;
@@ -562,6 +647,11 @@ footer .SubmitContainer .techlive {
   -webkit-padding-start: 5vw;
           padding-inline-start: 5vw;
 }
+@media (max-width: 820px) {
+  footer .SubmitContainer .techlive {
+    font-size: 1.2rem;
+  }
+}
 footer .SubmitContainer .submit {
   -webkit-margin-start: 3vw;
           margin-inline-start: 3vw;
@@ -575,6 +665,11 @@ footer .SubmitContainer .submit {
   outline: none;
   font-weight: bold;
 }
+@media (max-width: 450px) {
+  footer .SubmitContainer .submit {
+    margin-top: 1vh;
+  }
+}
 
 .circleofWho {
   width: 24vw;
@@ -585,6 +680,14 @@ footer .SubmitContainer .submit {
   right: -15vw;
   top: -12vw;
   overflow: hidden;
+}
+@media (min-width: 451px) and (max-width: 820px) {
+  .circleofWho {
+    width: 30vw;
+    height: 30vw;
+    right: -7vw;
+    top: -7vw;
+  }
 }
 
 .circleofWho2 {
@@ -598,6 +701,11 @@ footer .SubmitContainer .submit {
   z-index: -1;
   overflow: hidden;
 }
+@media (min-width: 451px) and (max-width: 820px) {
+  .circleofWho2 {
+    top: 30vh;
+  }
+}
 
 .circleofWho3 {
   width: 24vw;
@@ -609,4 +717,12 @@ footer .SubmitContainer .submit {
   bottom: -12vw;
   z-index: -1;
   overflow: hidden;
+}
+@media (min-width: 451px) and (max-width: 820px) {
+  .circleofWho3 {
+    width: 35vw;
+    height: 35vw;
+    right: -5vw;
+    bottom: -12vw;
+  }
 }/*# sourceMappingURL=main.css.map */

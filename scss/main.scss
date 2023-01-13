@@ -1,4 +1,5 @@
-@import "./colors", "../fonts/Poppins/stylesheet.css", "./about";
+@import "./colors", "../fonts/Poppins/stylesheet.css", "./about",
+  "./breakpoints";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,6 +24,9 @@ body {
 }
 .fs-8 {
   font-size: 0.8rem;
+  @include media("<=tablet") {
+    font-size: 1rem;
+  }
 }
 .active {
   position: relative;
@@ -42,7 +46,7 @@ body {
 .navbar-brand {
   font-size: 2rem;
   color: white;
-  font-family: "Poppins_bold";
+  font-weight: bold;
   &:hover {
     color: white !important;
   }
@@ -64,6 +68,15 @@ body {
 .header {
   background: $dark_blue;
   height: 85vh;
+  @include media("<=tablet") {
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  @include media("<=phone") {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
   .text {
     padding-inline-start: 10vw;
     display: flex;
@@ -77,6 +90,9 @@ body {
     h1 {
       font-size: 3rem;
       font-weight: bold;
+      @include media("<=tablet") {
+        font-size: 2.5rem;
+      }
     }
   }
   .img {
@@ -124,6 +140,9 @@ body {
 }
 .scrollDownIcon {
   width: 3vw;
+  @include media("<=tablet") {
+    width: 6vw;
+  }
 }
 ///WhoWeAre
 .title {
@@ -134,6 +153,9 @@ body {
   text-align: center;
   width: 50%;
   margin: 0 auto;
+  @include media("<=phone") {
+    font-size: 1.5rem;
+  }
 }
 .WhoWeAre {
   padding: 5vh 5vw;
@@ -146,9 +168,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 2;
+    @include media("<=tablet") {
+      margin-top: 3vh;
+    }
     img {
       width: 90%;
       margin: 0 auto;
+      @include media("<=phone") {
+        width: 60vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
     }
     .name,
     .major {
@@ -185,6 +216,9 @@ body {
   padding-top: 5vh;
   z-index: 1;
   height: 100vh;
+  @include media("<=tablet") {
+    height: auto;
+  }
   .title {
     position: relative;
     &::before {
@@ -219,6 +253,7 @@ body {
       background: $green_primary;
       .icon {
         background: white;
+
         svg {
           path {
             fill: $green_primary;
@@ -260,16 +295,21 @@ body {
   }
   .PSections {
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    overflow-x: scroll;
     .PSection {
       margin-inline-start: 0.5rem;
       margin-inline-end: 0.5rem;
       color: white;
       text-decoration: none;
       padding-bottom: 5px;
+      @include media("<=phone") {
+        text-align: center;
+        width: max-content;
+      }
       &:active,
       &:hover {
         color: $green_primary;
@@ -365,13 +405,22 @@ footer {
     .text {
       text-decoration: none;
       color: white;
+      width: fit-content;
+      word-wrap: wrap;
       text-align: end;
+      @include media("<=tablet") {
+        word-break: break-all;
+        text-align: start;
+      }
       &:hover {
         color: white;
       }
     }
     .icon {
       width: 35px;
+      @include media(">phone", "<=tablet") {
+        width: 7vw;
+      }
       img {
         width: 100%;
       }
@@ -405,6 +454,9 @@ footer {
       width: max-content;
       margin-top: 0.5rem;
       font-weight: bold;
+      @include media("<=tablet") {
+        width: 100%;
+      }
     }
   }
   .SubmitContainer {
@@ -420,6 +472,9 @@ footer {
       background: #439299;
       width: fit-content;
       padding-inline-start: 5vw;
+      @include media("<=tablet") {
+        font-size: 1.2rem;
+      }
     }
     .submit {
       margin-inline-start: 3vw;
@@ -432,6 +487,9 @@ footer {
       border: none;
       outline: none;
       font-weight: bold;
+      @include media("<=phone") {
+        margin-top: 1vh;
+      }
     }
   }
 }
@@ -445,6 +503,12 @@ footer {
   right: -15vw;
   top: -12vw;
   overflow: hidden;
+  @include media(">phone", "<=tablet") {
+    width: 30vw;
+    height: 30vw;
+    right: -7vw;
+    top: -7vw;
+  }
 }
 .circleofWho2 {
   width: 24vw;
@@ -456,6 +520,9 @@ footer {
   top: 3vw;
   z-index: -1;
   overflow: hidden;
+  @include media(">phone", "<=tablet") {
+    top: 30vh;
+  }
 }
 .circleofWho3 {
   width: 24vw;
@@ -467,4 +534,10 @@ footer {
   bottom: -12vw;
   z-index: -1;
   overflow: hidden;
+  @include media(">phone", "<=tablet") {
+    width: 35vw;
+    height: 35vw;
+    right: -5vw;
+    bottom: -12vw;
+  }
 }
