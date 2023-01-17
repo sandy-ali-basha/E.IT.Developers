@@ -235,6 +235,11 @@
   border-radius: 2px;
 }
 
+.animate__delay {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
 button:hover {
   filter: opacity(0.8);
 }

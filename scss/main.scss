@@ -19,6 +19,9 @@
   background-color: $green_primary;
   border-radius: 2px;
 }
+.animate__delay {
+  animation-delay: 0.5s;
+}
 button {
   &:hover {
     filter: opacity(0.8);

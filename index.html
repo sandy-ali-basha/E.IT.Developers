@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="./scss/main.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animate css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>E.IT.Developers</title>
   </head>
   <body>
@@ -70,8 +75,12 @@
       <div class="row header">
         <div class="col-md-6 text">
           <div class="popUp">Hello, We are</div>
-          <h1 class="my-lg-5 my-2">E.IT.Developers</h1>
-          <h5 class="mt-1 fs-8 mb-3">
+          <h1 class="my-lg-5 my-2 animate__bounceInLeft animate__animated">
+            E.IT.Developers
+          </h1>
+          <h5
+            class="mt-1 fs-8 mb-3 animate__bounceInLeft animate__animated animate__delay"
+          >
             Software Engineers and Self-managed Team
           </h5>
           <div class="my-lg-5 my-2 d-inline-flex">
@@ -83,7 +92,11 @@
           <img class="svg" src="./imgs/svg/Illustration2.svg" alt="" />
         </div>
         <div class="text-center w-100" style="height: max-content">
-          <img src="./imgs/svg/scrollDown.svg" class="scrollDownIcon" alt="" />
+          <img
+            src="./imgs/svg/scrollDown.svg"
+            class="scrollDownIcon animate__animated"
+            alt=""
+          />
         </div>
       </div>
       <!-- who we are  -->
@@ -97,19 +110,31 @@
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
           <a href="/page.html" class="fullBtn">Full View</a>
         </div>
-        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
+        <div
+          class="col-lg-3 col-md-4 personCard"
+          data-aos-delay="100"
+          data-aos="zoom-out"
+        >
           <img src="./imgs/asmaa.png" alt="" />
           <div class="name">Asmaa Nasr</div>
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
           <a href="#" class="fullBtn">Full View</a>
         </div>
-        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
+        <div
+          class="col-lg-3 col-md-4 personCard"
+          data-aos-delay="200"
+          data-aos="zoom-out"
+        >
           <img src="./imgs/asmaa.png" alt="" />
           <div class="name">Asmaa Nasr</div>
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
           <a href="#" class="fullBtn">Full View</a>
         </div>
-        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
+        <div
+          class="col-lg-3 col-md-4 personCard"
+          data-aos-delay="300"
+          data-aos="zoom-out"
+        >
           <img src="./imgs/asmaa.png" alt="" />
           <div class="name">Asmaa Nasr</div>
           <div class="major">Our UI/UX Designer & Systems Analyst</div>
@@ -573,6 +598,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
         window.setTimeout(
@@ -586,5 +612,13 @@
     <script>
       AOS.init();
     </script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- //script js// -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
