@@ -32,7 +32,11 @@ body {
   overflow-x: hidden;
 }
 .navbar {
-  background: $dark_blue !important;
+  background: #313c4e48 !important;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(5px);
+  z-index: 555;
 }
 .navbar-toggler {
   padding: 0.3px 0.25rem 0.3rem 0rem;
@@ -80,6 +84,11 @@ body {
 }
 .nav_img {
   width: 30px;
+}
+.screen {
+  @include media("<tablet") {
+    display: none;
+  }
 }
 .btn_hireUs {
   background: $green_primary;

@@ -44,27 +44,27 @@
           >
             <img class="nav_img" src="./imgs/svg/nav-icon.svg" alt="" />
           </button>
+          <img class="nav_img screen" src="./imgs/svg/nav-icon.svg" alt="" />
           IT
-          <br />DEVELOPERS</a
+          <br class="ITBR" />DEVELOPERS</a
         >
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto" id="navbarUL">
             <li class="nav-item">
-              <a class="nav-link navBtn active mx-2" href="#">Our Team</a>
+              <a class="nav-link navBtn mx-2" href="#OurTeam">Our Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navBtn mx-2" href="#">Services</a>
+              <a class="nav-link navBtn mx-2" href="#Services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navBtn mx-2" href="./page.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navBtn mx-2" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navBtn px-4 mx-2 btn btn_hireUs" href="#"
-                >Hire Us!</a
+              <a
+                class="nav-link navBtn px-4 mx-2 btn btn_hireUs"
+                href="#ContactUS"
+                >Contact Us</a
               >
             </li>
           </ul>
@@ -91,7 +91,7 @@
         <div class="col-md-6 img">
           <img class="svg" src="./imgs/svg/Illustration2.svg" alt="" />
         </div>
-        <div class="text-center w-100" style="height: max-content">
+        <div id="OurTeam" class="text-center w-100" style="height: max-content">
           <img
             src="./imgs/svg/scrollDown.svg"
             class="scrollDownIcon animate__animated"
@@ -141,7 +141,7 @@
           <a href="#" class="fullBtn">Full View</a>
         </div>
       </div>
-      <div class="row py-5 WhatWeDo">
+      <div class="row py-5 WhatWeDo" id="Services">
         <div class="circleofWho" data-aos="fade-left"></div>
         <div class="circleofWho2" data-aos="fade-right"></div>
         <div class="col-md-12">
@@ -158,7 +158,7 @@
         </div>
         <div style="width: 80vw; z-index: 2" class="my-5 mx-auto row">
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="Scard">
+            <div class="Scard" data-aos="flip-up">
               <div class="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +213,7 @@
           </div>
           <!-- web app  -->
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="Scard">
+            <div class="Scard" data-aos-delay="200" data-aos="flip-up">
               <div class="icon">
                 <svg
                   id="Group_34847"
@@ -250,7 +250,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="Scard">
+            <div class="Scard" data-aos-delay="300" data-aos="flip-up">
               <div class="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +305,7 @@
           </div>
           <!-- Deployment -->
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="Scard">
+            <div class="Scard" data-aos-delay="400" data-aos="flip-up">
               <div class="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +339,7 @@
           </div>
           <!-- Design and UI/UX -->
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="Scard">
+            <div class="Scard" data-aos-delay="500" data-aos="flip-up">
               <div class="icon">
                 <svg
                   id="Group_34847"
@@ -377,7 +377,7 @@
           </div>
           <!-- Entire Systems -->
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="Scard">
+            <div class="Scard" data-aos-delay="600" data-aos="flip-up">
               <div class="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -512,7 +512,7 @@
     <footer>
       <div class="Fheader">Have any Project in Mind?</div>
       <form action="">
-        <div class="contact">
+        <div class="contact" id="ContactUS">
           <div class="row">
             <div class="col-md-5">
               <div class="Ctitle mb-2">Contact Us</div>
