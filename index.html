@@ -110,45 +110,81 @@
         </a>
       </div>
       <!-- who we are  -->
-      <div class="WhoWeAre row" id="WhoWeAre">
+      <div class="WhoWeAre row">
         <div class="col-md-12">
           <div class="title" data-aos="fade-up">Who We Are</div>
         </div>
-        <div class="col-lg-3 col-md-4 personCard" data-aos="zoom-out">
-          <img src="./imgs/asmaa.png" alt="" />
-          <div class="name">Asmaa Nasr</div>
-          <div class="major">Our UI/UX Designer & Systems Analyst</div>
-          <a href="/page.html" class="fullBtn">Full View</a>
-        </div>
-        <div
-          class="col-lg-3 col-md-4 personCard"
-          data-aos-delay="100"
-          data-aos="zoom-out"
-        >
-          <img src="./imgs/asmaa.png" alt="" />
-          <div class="name">Asmaa Nasr</div>
-          <div class="major">Our UI/UX Designer & Systems Analyst</div>
-          <a href="#" class="fullBtn">Full View</a>
-        </div>
-        <div
-          class="col-lg-3 col-md-4 personCard"
-          data-aos-delay="200"
-          data-aos="zoom-out"
-        >
-          <img src="./imgs/asmaa.png" alt="" />
-          <div class="name">Asmaa Nasr</div>
-          <div class="major">Our UI/UX Designer & Systems Analyst</div>
-          <a href="#" class="fullBtn">Full View</a>
-        </div>
-        <div
-          class="col-lg-3 col-md-4 personCard"
-          data-aos-delay="300"
-          data-aos="zoom-out"
-        >
-          <img src="./imgs/asmaa.png" alt="" />
-          <div class="name">Asmaa Nasr</div>
-          <div class="major">Our UI/UX Designer & Systems Analyst</div>
-          <a href="#" class="fullBtn">Full View</a>
+        <!-- Slider main container -->
+        <div class="swiper" id="OurTeam">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="personCard swiper-lazy" data-aos="zoom-out">
+                <img src="./imgs/asmaa.png" alt="" />
+                <div class="name">Asmaa Nasr</div>
+                <div class="major">Our UI/UX Designer & Systems Analyst</div>
+                <a href="/page.html" class="fullBtn">Full View</a>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="personCard swiper-lazy"
+                data-aos-delay="100"
+                data-aos="zoom-out"
+              >
+                <img src="./imgs/asmaa.png" alt="" />
+                <div class="name">Asmaa Nasr</div>
+                <div class="major">Our UI/UX Designer & Systems Analyst</div>
+                <a href="#" class="fullBtn">Full View</a>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="personCard swiper-lazy"
+                data-aos-delay="200"
+                data-aos="zoom-out"
+              >
+                <img src="./imgs/asmaa.png" alt="" />
+                <div class="name">Asmaa Nasr</div>
+                <div class="major">Our UI/UX Designer & Systems Analyst</div>
+                <a href="#" class="fullBtn">Full View</a>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="personCard swiper-lazy"
+                data-aos-delay="300"
+                data-aos="zoom-out"
+              >
+                <img src="./imgs/asmaa.png" alt="" />
+                <div class="name">Asmaa Nasr</div>
+                <div class="major">Our UI/UX Designer & Systems Analyst</div>
+                <a href="#" class="fullBtn">Full View</a>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="personCard swiper-lazy"
+                data-aos-delay="300"
+                data-aos="zoom-out"
+              >
+                <img src="./imgs/asmaa.png" alt="" />
+                <div class="name">Asmaa Nasr</div>
+                <div class="major">Our UI/UX Designer & Systems Analyst</div>
+                <a href="#" class="fullBtn">Full View</a>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="row py-5 WhatWeDo" id="Services">
@@ -633,13 +669,31 @@
     <!-- swiper  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const OurTeam = new Swiper(".OurTeam", {
+      const OurTeam = new Swiper("#OurTeam", {
         // Optional parameters
-        slidesPerView: "auto",
+        slidesPerView: "4",
         spaceBetween: 5,
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
+        lazy: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+          },
+          900: {
+            slidesPerView: 4,
+          },
         },
       });
     </script>
