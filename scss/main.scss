@@ -316,6 +316,13 @@ body {
   }
 }
 //OurPortfolio
+.portfolioCard {
+  // d-flex flex-column justify-content-center align-items-center
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .OurPortfolio {
   background: $dark_blue;
   padding-top: 5vh;
@@ -332,6 +339,10 @@ body {
     padding-bottom: 1rem;
 
     flex-wrap: wrap;
+    .PSectionActive {
+      color: $green_primary !important;
+      border-bottom: 1px solid $green_primary;
+    }
     .PSection {
       margin-inline-start: 0.5rem;
       margin-inline-end: 0.5rem;

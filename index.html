@@ -48,9 +48,19 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <img class="nav_img" src="./imgs/svg/nav-icon.svg" alt="" />
+            <img
+              loading="lazy"
+              class="nav_img"
+              src="./imgs/svg/nav-icon.svg"
+              alt=""
+            />
           </button>
-          <img class="nav_img screen" src="./imgs/svg/nav-icon.svg" alt="" />
+          <img
+            loading="lazy"
+            class="nav_img screen"
+            src="./imgs/svg/nav-icon.svg"
+            alt=""
+          />
           IT
           <br class="ITBR" />DEVELOPERS</a
         >
@@ -95,7 +105,12 @@
           </div>
         </div>
         <div class="col-md-6 img">
-          <img class="svg" src="./imgs/svg/Illustration2.svg" alt="" />
+          <img
+            loading="lazy"
+            class="svg"
+            src="./imgs/svg/Illustration2.svg"
+            alt=""
+          />
         </div>
         <a
           href="#WhoWeAre"
@@ -103,6 +118,7 @@
           style="height: max-content"
         >
           <img
+            loading="lazy"
             src="./imgs/svg/scrollDown.svg"
             class="scrollDownIcon animate__animated"
             alt="icon"
@@ -121,7 +137,7 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="personCard swiper-lazy" data-aos="zoom-out">
-                <img src="./imgs/asmaa.png" alt="" />
+                <img loading="lazy" src="./imgs/asmaa.png" alt="" />
                 <div class="name">Asmaa Nasr</div>
                 <div class="major">Our UI/UX Designer & Systems Analyst</div>
                 <a href="/page.html" class="fullBtn">Full View</a>
@@ -134,7 +150,7 @@
                 data-aos-delay="100"
                 data-aos="zoom-out"
               >
-                <img src="./imgs/asmaa.png" alt="" />
+                <img loading="lazy" src="./imgs/asmaa.png" alt="" />
                 <div class="name">Asmaa Nasr</div>
                 <div class="major">Our UI/UX Designer & Systems Analyst</div>
                 <a href="#" class="fullBtn">Full View</a>
@@ -147,7 +163,7 @@
                 data-aos-delay="200"
                 data-aos="zoom-out"
               >
-                <img src="./imgs/asmaa.png" alt="" />
+                <img loading="lazy" src="./imgs/asmaa.png" alt="" />
                 <div class="name">Asmaa Nasr</div>
                 <div class="major">Our UI/UX Designer & Systems Analyst</div>
                 <a href="#" class="fullBtn">Full View</a>
@@ -160,7 +176,7 @@
                 data-aos-delay="300"
                 data-aos="zoom-out"
               >
-                <img src="./imgs/asmaa.png" alt="" />
+                <img loading="lazy" src="./imgs/asmaa.png" alt="" />
                 <div class="name">Asmaa Nasr</div>
                 <div class="major">Our UI/UX Designer & Systems Analyst</div>
                 <a href="#" class="fullBtn">Full View</a>
@@ -173,7 +189,7 @@
                 data-aos-delay="300"
                 data-aos="zoom-out"
               >
-                <img src="./imgs/asmaa.png" alt="" />
+                <img loading="lazy" src="./imgs/asmaa.png" alt="" />
                 <div class="name">Asmaa Nasr</div>
                 <div class="major">Our UI/UX Designer & Systems Analyst</div>
                 <a href="#" class="fullBtn">Full View</a>
@@ -200,7 +216,7 @@
         </div>
         <!-- cards  -->
         <div class="waveBg">
-          <img src="./imgs/many--.png" alt="" />
+          <img loading="lazy" src="./imgs/many--.png" alt="" />
         </div>
         <div style="width: 80vw; z-index: 2" class="my-5 mx-auto row">
           <div class="col-lg-4 col-md-6 p-3">
@@ -463,28 +479,31 @@
       <div class="OurPortfolio row">
         <div class="OurPortfolioHeader">
           <div class="title" data-aos="fade-up">Our Portfolio</div>
-          <div class="d-inline-flex PSections">
-            <a href="#" class="PSection"> All </a>
-            <a href="#" class="PSection"> Mobile Development </a>
-            <a href="#" class="PSection"> web Development </a>
-            <a href="#" class="PSection"> UI/ UX </a>
-            <a href="#" class="PSection"> design</a>
+          <div class="d-inline-flex PSections filters">
+            <a class="PSection PSectionActive" data-filter="*"> All </a>
+            <a class="PSection" data-filter=".mobile"> Mobile Development </a>
+            <a class="PSection" data-filter=".web"> web Development </a>
+            <a class="PSection" data-filter=".ui"> UI/ UX </a>
+            <a class="PSection" data-filter=".design"> design</a>
           </div>
         </div>
         <div class="cards container-fluid px-5">
-          <div class="row">
-            <div
-              class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
-            >
+          <div class="row grid">
+            <div class="col-md-4 px-3 portfolioCard all web">
               <div
                 class="position-relative imageContainer"
                 data-aos="flip-right"
                 data-aos-delay="300"
                 data-aos-duration="700"
               >
-                <img class="w-100" src="./imgs/Component.png" alt="" />
+                <img
+                  loading="lazy"
+                  class="w-100"
+                  src="./imgs/Component.png"
+                  alt=""
+                />
                 <div class="overlay">
-                  <div class="CardTitle">ANK Ecommerce Apps</div>
+                  <div class="CardTitle">web Apps</div>
                   <p class="disc">
                     a group of three apps, one for test and tow for test and and
                     and ds dsf sdf sd fs ds dfsdf
@@ -498,18 +517,51 @@
               </div>
               <div class="cardName">ANK Ecommerce Apps</div>
             </div>
-            <div
-              class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
-            >
+            <div class="col-md-4 px-3 portfolioCard all mobile">
               <div
                 class="position-relative imageContainer"
                 data-aos="flip-right"
                 data-aos-delay="200"
                 data-aos-duration="700"
               >
-                <img class="w-100" src="./imgs/Component.png" alt="" />
+                <img
+                  loading="lazy"
+                  class="w-100"
+                  src="./imgs/Component.png"
+                  alt=""
+                />
+
                 <div class="overlay">
-                  <div class="CardTitle">ANK Ecommerce Apps</div>
+                  <div class="CardTitle">mobile Apps</div>
+                  <p class="disc">
+                    a group of three apps, one for test and tow for test and and
+                    and ds dsf sdf sd fs ds dfsdf
+                  </p>
+                  <div class="d-inline-flex">
+                    <div class="name">Adobe xd</div>
+                    <div class="name">laravel</div>
+                    <div class="name">flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardName">mobile Apps</div>
+            </div>
+            <div class="col-md-4 px-3 portfolioCard all ui">
+              <div
+                class="position-relative imageContainer"
+                data-aos="flip-right"
+                data-aos-delay="100"
+                data-aos-duration="700"
+              >
+                <img
+                  loading="lazy"
+                  class="w-100"
+                  src="./imgs/Component.png"
+                  alt=""
+                />
+
+                <div class="overlay">
+                  <div class="CardTitle">ui/ux Apps</div>
                   <p class="disc">
                     a group of three apps, one for test and tow for test and and
                     and ds dsf sdf sd fs ds dfsdf
@@ -523,8 +575,54 @@
               </div>
               <div class="cardName">ANK Ecommerce Apps</div>
             </div>
-            <div
-              class="col-md-4 d-flex flex-column justify-content-center align-items-center px-3"
+            <div class="col-md-4 px-3 portfolioCard all design">
+              <div class="position-relative imageContainer">
+                <img
+                  loading="lazy"
+                  class="w-100"
+                  src="./imgs/Component.png"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="CardTitle">ANK design Apps</div>
+                  <p class="disc">
+                    a group of three apps, one for test and tow for test and and
+                    and ds dsf sdf sd fs ds dfsdf
+                  </p>
+                  <div class="d-inline-flex">
+                    <div class="name">Adobe xd</div>
+                    <div class="name">laravel</div>
+                    <div class="name">flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardName">ANK Ecommerce Apps</div>
+            </div>
+            <div class="col-md-4 px-3 portfolioCard all design">
+              <div class="position-relative imageContainer">
+                <img
+                  loading="lazy"
+                  class="w-100"
+                  src="./imgs/Component.png"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="CardTitle">ANK design Apps</div>
+                  <p class="disc">
+                    a group of three apps, one for test and tow for test and and
+                    and ds dsf sdf sd fs ds dfsdf
+                  </p>
+                  <div class="d-inline-flex">
+                    <div class="name">Adobe xd</div>
+                    <div class="name">laravel</div>
+                    <div class="name">flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardName">ANK Ecommerce Apps</div>
+            </div>
+            <!-- <div
+              class="col-md-4 px-3 portfolioCard animate__animated animate__flipInY d-none"
             >
               <div
                 class="position-relative imageContainer"
@@ -532,7 +630,7 @@
                 data-aos-delay="100"
                 data-aos-duration="700"
               >
-                <img class="w-100" src="./imgs/Component.png" alt="" />
+                <img loading="lazy"  class="w-100" src="./imgs/Component.png" alt="" />
                 <div class="overlay">
                   <div class="CardTitle">ANK Ecommerce Apps</div>
                   <p class="disc">
@@ -548,10 +646,60 @@
               </div>
               <div class="cardName">ANK Ecommerce Apps</div>
             </div>
+            <div
+              class="col-md-4 px-3 portfolioCard animate__animated animate__flipInY d-none"
+            >
+              <div
+                class="position-relative imageContainer"
+                data-aos="flip-right"
+                data-aos-delay="100"
+                data-aos-duration="700"
+              >
+                <img loading="lazy"  class="w-100" src="./imgs/Component.png" alt="" />
+                <div class="overlay">
+                  <div class="CardTitle">ANK Ecommerce Apps</div>
+                  <p class="disc">
+                    a group of three apps, one for test and tow for test and and
+                    and ds dsf sdf sd fs ds dfsdf
+                  </p>
+                  <div class="d-inline-flex">
+                    <div class="name">Adobe xd</div>
+                    <div class="name">laravel</div>
+                    <div class="name">flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardName">ANK Ecommerce Apps</div>
+            </div>
+            <div
+              class="col-md-4 px-3 portfolioCard animate__animated animate__flipInY d-none"
+            >
+              <div
+                class="position-relative imageContainer"
+                data-aos="flip-right"
+                data-aos-delay="100"
+                data-aos-duration="700"
+              >
+                <img loading="lazy"  class="w-100" src="./imgs/Component.png" alt="" />
+                <div class="overlay">
+                  <div class="CardTitle">ANK Ecommerce Apps</div>
+                  <p class="disc">
+                    a group of three apps, one for test and tow for test and and
+                    and ds dsf sdf sd fs ds dfsdf
+                  </p>
+                  <div class="d-inline-flex">
+                    <div class="name">Adobe xd</div>
+                    <div class="name">laravel</div>
+                    <div class="name">flutter</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardName">ANK Ecommerce Apps</div>
+            </div> -->
           </div>
-          <div class="text-center">
+          <!-- <div class="text-center">
             <button class="btn ViewMore">View More</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
@@ -571,7 +719,7 @@
                   class="d-flex align-items-center my-4 justify-content-start"
                 >
                   <div class="icon me-3">
-                    <img src="./imgs/svg/phone.svg" alt="" />
+                    <img loading="lazy" src="./imgs/svg/phone.svg" alt="" />
                   </div>
                   <a href="tel:+963993503635" class="text">+963 993503635</a>
                 </div>
@@ -579,7 +727,12 @@
                   class="d-flex align-items-center my-4 justify-content-start"
                 >
                   <div class="icon me-3">
-                    <img class="w-100" src="./imgs/svg/mail.svg" alt="" />
+                    <img
+                      loading="lazy"
+                      class="w-100"
+                      src="./imgs/svg/mail.svg"
+                      alt=""
+                    />
                   </div>
                   <a href="mailto:Mahmoudsaal7@gmail.com" class="text">
                     Mahmoudsaal7@gmail.com</a
@@ -589,7 +742,7 @@
                   class="d-flex align-items-center my-4 justify-content-start"
                 >
                   <div class="icon me-3">
-                    <img src="./imgs/svg/phone.svg" alt="" />
+                    <img loading="lazy" src="./imgs/svg/phone.svg" alt="" />
                   </div>
                   <a href="#" class="text">WhatsApp</a>
                 </div>
@@ -664,6 +817,9 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
+    <!-- filters  -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
     <!-- //script js// -->
     <script src="./js/script.js"></script>
     <!-- swiper  -->
