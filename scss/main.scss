@@ -9,6 +9,9 @@
   transition: all 0.5s;
   accent-color: #439299;
 }
+a {
+  text-decoration: none;
+}
 ::-webkit-scrollbar-track {
   background-color: $dark_blue;
 }
